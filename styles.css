@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  list-style: none;
+  text-decoration: none;  
+}
+
+header{
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover{
+    color: #7e2401;
+}
+
+#logo {
+    width: 150px;
+    height: 110px;
+}
+
+#banner {
+    background-image: url('https://pbs.twimg.com/media/FBwMEAMWQAA6BOO?format=jpg&name=medium');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer{
+    width: 55%;
+
+}
+
+#sinopse{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.description{
+    color: #fff;
+    font-size: 19px;
+    font-family:'Kdam Thmor Pro', sans-serif ;
+    width: 85%;
+   
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: #7e2401;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: 0.8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: black;
+}
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image:url( 'https://i.pinimg.com/originals/fc/c6/b9/fcc6b98e859cfe5310f61bc4422fca5b.jpg');
+}
+.banner-2{
+    background-image:url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_611/https://tudodenerd.com.br/wp-content/uploads/2022/03/Zoe-Kravitz-mulher-gato.jpg ');
+}
+.banner-3{
+    background-image:url('https://i.pinimg.com/originals/65/1c/c8/651cc8cf1ebac2a83861b4ad9242eaa5.jpg') ;
+    
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #banner{
+        background-position: 40%;
+    }
+
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer{
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px
+    }
+
+   
+}
+
+#container-contact{
+    display: flex;
+}
+
+.banner-contact {
+    background-image: url('https://i.pinimg.com/originals/1d/ed/e1/1dede1dc3fcaf37a9b501fe51bdf5680.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 65%;
+    height: 500px;
+    margin-top: 180px;
+    
+}
+.contact {
+    height: 400px;
+    justify-content:flex-end;
+    margin-top: 180px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 19px;
+    color: #fff;
+}
+h1 {
+    font-weight: bold;
+}
+
+.cards-contact {
+    display: flex;
+    justify-content: right;
+
+}
+
+#facebook-card{
+    width: 50px;
+    height:50px;
+}
+#instagran-card{
+    width: 50px;
+    height: 50px;
+    margin-right: 420px;
+    margin-left: 100px;
+}
+@media(max-width: 768px){
+    #container-contact{
+        flex-direction: column;
+    }
+
+    .banner-contact{
+        height: 200px;
+        width: 100%;
+        margin-top: 150px;
+    }
+
+    .cards-contact{
+        justify-content: center;
+    }
+    #instagran-card{
+        margin-right: none;
+    }
+
+
+}
